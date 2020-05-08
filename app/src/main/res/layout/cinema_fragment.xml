@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp26"
+        android:layout_height="wrap_content">
+        <com.amap.api.maps2d.MapView
+            android:layout_width="wrap_content"
+            android:id="@+id/map"
+            android:visibility="gone"
+            android:layout_height="wrap_content"></com.amap.api.maps2d.MapView>
+        <ImageView
+            android:layout_width="@dimen/dp20"
+
+            android:layout_marginTop="@dimen/dp38"
+            android:src="@mipmap/icon_location"
+            android:layout_height="@dimen/dp24" />
+        <TextView
+            android:layout_width="@dimen/dp28"
+            android:layout_marginLeft="@dimen/dp12"
+            android:textSize="@dimen/sp14"
+            android:id="@+id/iv_wei"
+            android:text="北京"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="@dimen/dp43"
+            android:layout_height="@dimen/dp14" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp41"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/dp24"
+                android:src="@mipmap/icon_search"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp24"
+                android:id="@+id/iv_search"
+                android:layout_height="@dimen/dp24" />
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tab"
+        android:background="@color/dark_blue_grey"
+        app:tabTextColor="@android:color/white"
+        android:layout_marginTop="@dimen/dp25"
+        android:layout_height="40dp"></android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/vp"
+        android:layout_height="0dp"></android.support.v4.view.ViewPager>
+</LinearLayout>

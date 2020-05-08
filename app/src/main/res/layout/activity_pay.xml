@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.PayActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@mipmap/beijing"
+        android:scaleType="centerCrop"
+        android:layout_height="@dimen/dp200"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:text="选座"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dp100"
+        android:gravity="center"
+        android:layout_height="@dimen/dp200" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="可选"
+            android:buttonTint="@android:color/white"
+            android:textColor="@android:color/white" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+
+            android:layout_height="wrap_content"
+            android:text="已售"
+            android:buttonTint="@color/yellow"
+            android:textColor="@android:color/white" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="选中"
+            android:buttonTint="@color/carnation_pink"
+            android:textColor="@android:color/white" />
+    </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="选择影厅和时间(6)"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp16"
+        android:id="@+id/tv_xuanze"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_height="@dimen/dp100"></android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="match_parent"
+            android:text="请先选座"
+            android:id="@+id/bt"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:background="@color/carnation_pink"
+            android:layout_height="@dimen/dp35" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

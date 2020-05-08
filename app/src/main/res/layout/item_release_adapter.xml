@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    android:layout_marginLeft="@dimen/dp24"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="312dp"
+        android:layout_height="@dimen/dp120">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="312dp"
+            android:id="@+id/iv"
+            android:scaleType="centerCrop"
+            android:background="@color/dark"
+            android:layout_height="@dimen/dp120" />
+        <TextView
+            android:layout_width="@dimen/dp70"
+            android:textColor="@android:color/white"
+            android:id="@+id/tv_name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_height="@dimen/dp20" />
+        <TextView
+            android:layout_width="@dimen/dp30"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp90"
+            android:id="@+id/tv"
+            android:textColor="@android:color/white"
+            android:layout_height="@dimen/dp17" />
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_width="@dimen/dp45"
+            android:background="@color/lipstick"
+            android:textSize="@dimen/sp12"
+            android:textColor="@android:color/white"
+            android:text="购票"
+            android:id="@+id/tv_shopp"
+            android:gravity="center"
+            android:layout_height="@dimen/dp20" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp10"
+        android:id="@+id/rv"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark"
+    android:layout_height="match_parent"
+    tools:context=".activity.MoreActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp28"
+        android:layout_marginRight="@dimen/dp24"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/dp16"
+            android:id="@+id/iv_shape"
+            android:src="@mipmap/shape"
+            android:layout_marginTop="@dimen/dp44"
+            android:layout_height="@dimen/dp16" />
+        <ImageView
+            android:layout_width="17.5dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_search"
+            android:id="@+id/iv_search"
+            android:layout_marginTop="@dimen/dp40"
+            android:layout_height="17.5dp" />
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp20"
+        app:tabTextColor="@android:color/white"
+        android:id="@+id/tab"
+        android:layout_height="38dp"></android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/vp"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

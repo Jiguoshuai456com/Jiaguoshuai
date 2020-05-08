@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dp10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/dp24"
+    android:background="@color/dark"
+    android:layout_marginRight="@dimen/dp24"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/dp44">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="@dimen/dp44"
+            android:id="@+id/sdv"
+            app:roundAsCircle="true"
+            app:failureImage="@mipmap/ic_launcher"
+            android:layout_height="@dimen/dp44" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sp12"
+                android:text="1111"
+                android:id="@+id/tv_name"
+                android:textColor="@android:color/white"
+                android:layout_height="@dimen/dp17" />
+            <com.bw.movie.view.RatingBar
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/xingxing"
+                android:layout_toRightOf="@id/iv"
+                android:layout_height="16dp"
+                app:starCount="5"
+                app:starEmpty="@mipmap/xing1"
+                app:starFill="@mipmap/xing3"
+                app:starHalf="@mipmap/xing2"
+                app:starImageSize="16dp"
+                app:starPadding="6dp"
+                app:starStep="1.5"
+                app:stepSize="Half"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sp12"
+                android:id="@+id/tv_fenshu"
+                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/xingxing"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="9分"
+                android:layout_height="@dimen/dp17" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tv_time"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:text="111"
+                android:layout_height="@dimen/dp17" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tv_pinglun"
+        android:layout_marginTop="@dimen/dp14"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/zan1"
+            android:layout_width="@dimen/dp18"
+            android:id="@+id/sdv_zan"
+            android:layout_height="@dimen/dp18" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/dp10"
+            android:textColor="@android:color/white"
+            android:text="1111"
+            android:id="@+id/tv_dianzan"
+            android:layout_marginLeft="@dimen/dp7"
+            android:layout_height="@dimen/dp14" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/sp10"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:text="1111111111"
+                android:id="@+id/tv_huifu"
+                android:layout_height="@dimen/dp14" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_touxiang"
+                android:layout_width="@dimen/dp26"
+                android:layout_height="@dimen/dp26"
+                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@id/tv_huifu" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_height="1dp" />
+
+</LinearLayout>

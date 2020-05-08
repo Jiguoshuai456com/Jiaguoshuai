@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="dark_gray">#999999</color>
+    <color name="carnation_pink">#ff72a1</color>
+    <color name="algae">#50b674</color>
+    <color name="colormeimei">#EE3FA1</color>
+    <color name="dark">#141931</color>
+    <color name="dark_blue_grey">#1c2243</color>
+    <color name="lipstick">#e8185e</color>
+    <color name="yellow">#e8be18</color>
+    <color name="desert">#d3af56</color>
+</resources>

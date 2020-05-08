@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp26"
+
+                android:layout_height="wrap_content">
+                <com.amap.api.maps2d.MapView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/map"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"></com.amap.api.maps2d.MapView>
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+
+                    android:layout_marginTop="@dimen/dp38"
+                    android:src="@mipmap/icon_location"
+                    android:layout_height="@dimen/dp24" />
+                <TextView
+                    android:layout_width="@dimen/dp28"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:textSize="@dimen/sp14"
+                    android:id="@+id/iv_wei"
+                    android:text="北京"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="@dimen/dp43"
+                    android:layout_height="@dimen/dp14" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/dp41"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="@dimen/dp24"
+                        android:src="@mipmap/icon_search"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/dp24"
+                        android:id="@+id/iv_search"
+                        android:layout_height="@dimen/dp24" />
+                </RelativeLayout>
+            </LinearLayout>
+            <com.stx.xhb.xbanner.XBanner
+                android:padding="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:id="@+id/xb"
+                android:layout_marginTop="@dimen/dp18"
+                android:layout_height="@dimen/dp250"></com.stx.xhb.xbanner.XBanner>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="@dimen/dp22"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:id="@+id/tv_size"
+                    android:textColor="@android:color/white"
+                    android:layout_height="@dimen/dp20" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:background="@color/dark_blue_grey"
+                android:layout_height="@dimen/dp38">
+
+                <ImageView
+                    android:layout_width="@dimen/dp19"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp25"
+                    android:src="@mipmap/hot_1"
+                    android:id="@+id/ivre"
+                    android:layout_height="@dimen/dp20" />
+                <TextView
+                android:layout_width="@dimen/dp56"
+                android:text="正在热映"
+                android:textSize="@dimen/sp14"
+                android:layout_marginLeft="@dimen/dp54"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:layout_height="@dimen/dp20" />
+                <TextView
+                    android:layout_width="@dimen/dp24"
+                    android:text="更多"
+                    android:id="@+id/tv_gengduo1"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/sp12"
+                    android:layout_marginRight="@dimen/dp24"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="@dimen/dp17" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp20"
+                android:id="@+id/rv3"
+                android:layout_marginLeft="@dimen/dp24"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:background="@color/dark_blue_grey"
+                android:layout_height="@dimen/dp38">
+
+                <ImageView
+                    android:layout_width="@dimen/dp19"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp25"
+                    android:src="@mipmap/top"
+                    android:layout_height="@dimen/dp20" />
+                <TextView
+                    android:layout_width="@dimen/dp56"
+                    android:text="即将上映"
+                    android:textSize="@dimen/sp14"
+                    android:layout_marginLeft="@dimen/dp54"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="@dimen/dp20" />
+                <TextView
+                    android:layout_width="@dimen/dp24"
+                    android:text="更多"
+                    android:id="@+id/tv_gengduo2"
+
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/sp12"
+                    android:layout_marginRight="@dimen/dp24"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="@dimen/dp17" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp20"
+                android:id="@+id/rv2"
+                android:layout_marginLeft="@dimen/dp24"
+                android:layout_height="350dp">
+            </android.support.v7.widget.RecyclerView>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:background="@color/dark_blue_grey"
+                android:layout_height="@dimen/dp38">
+
+                <ImageView
+                    android:layout_width="@dimen/dp19"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp25"
+                    android:src="@mipmap/men"
+                    android:layout_height="@dimen/dp20" />
+                <TextView
+                    android:layout_width="@dimen/dp56"
+                    android:text="热门电影"
+                    android:textSize="@dimen/sp14"
+                    android:layout_marginLeft="@dimen/dp54"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="@dimen/dp20" />
+                <TextView
+                    android:layout_width="@dimen/dp24"
+                    android:text="更多"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/sp12"
+                    android:id="@+id/tv_gengduo3"
+
+                    android:layout_marginRight="@dimen/dp24"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/white"
+                    android:layout_height="@dimen/dp17" />
+            </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp20"
+                android:id="@+id/rv1"
+                android:layout_marginRight="@dimen/dp24"
+                android:layout_marginLeft="@dimen/dp24"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+</ScrollView>

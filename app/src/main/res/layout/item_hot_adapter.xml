@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp100"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_height="@dimen/dp130">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:id="@+id/iv"
+            android:scaleType="centerCrop"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="@dimen/dp30"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv"
+            android:textColor="@android:color/white"
+            android:layout_height="@dimen/dp17" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="@dimen/dp84"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/dp10"
+        android:textSize="@dimen/sp14"
+        android:id="@+id/tv_name"
+        android:layout_height="@dimen/dp20" />
+    <TextView
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="@dimen/dp45"
+        android:background="@color/lipstick"
+        android:textSize="@dimen/sp12"
+        android:textColor="@android:color/white"
+        android:text="购票"
+        android:id="@+id/tv_shopp"
+        android:gravity="center"
+        android:layout_height="@dimen/dp20" />
+</LinearLayout>

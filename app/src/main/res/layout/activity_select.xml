@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".activity.SelectActivity">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:id="@+id/iv"
+        android:src="@mipmap/ic_launcher"
+        android:layout_height="300dp" />
+    <TextView
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/sp17"
+        android:textColor="@android:color/white"
+        android:id="@+id/tv_name"
+        android:text="111"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp24"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="时长"
+            android:textSize="@dimen/sp14"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="评分"
+            android:textSize="@dimen/sp14"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="导演"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp14"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp24"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="时长"
+            android:id="@+id/tv_time"
+            android:textSize="@dimen/sp14"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="评分"
+            android:id="@+id/tv_pingfen"
+            android:textSize="@dimen/sp14"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="导演"
+            android:id="@+id/tv_direct"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp14"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp10"
+        android:paddingLeft="@dimen/dp24"
+        android:paddingRight="@dimen/dp24"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="@color/dark_blue_grey"
+        android:layout_height="@dimen/dp50">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="海淀区"
+            android:textSize="@dimen/sp17"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="今天多少号"
+
+            android:textSize="@dimen/sp17"
+
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="价格最低"
+            android:textSize="@dimen/sp17"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="20dp"
+            android:src="@mipmap/icon_search"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/dp24"
+        android:id="@+id/rv"
+        android:paddingRight="@dimen/dp24"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
